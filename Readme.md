@@ -14,9 +14,11 @@ This template is based on a base image that has the INLA packaged already instal
 3. Edit Dockerfile. The file contains an example of how to add an R package
 4. Push the repository to Github. You should create a repository on Github first, add the correct remote and then push.
 
-If everything works, a Github action will start running after you push. If nothing fails, an Image will be pushed to the Github package registry. The name will be  `ghcr.io/dhis2-chap/docker_r_inla`. You may have to go to the package settings and change visibility to Public.
+If everything works, a Github action will start running after you push. If nothing fails, an Image will be pushed to the Github package registry. The name will be  `ghcr.io/dhis2-chap/docker_r_inla`. 
 
-To verify that the image exists, you can run `docker pull ghcr.io/dhis2-chap/docker_r_inla:master`.
+In order to make it possible for anyone to use the image without authentication, you have to make the image public. On the left side in the front page of the repository you created, you will see the package. Click Package settings and edit visibility. 
 
-Tip: It can be a good idea to add new lines for every package you want to install, to make use of Docker's caching.
+To verify that the image exists and is available to the public, you can run `docker pull ghcr.io/ORGANIZATION/IMAGE_NAME:master`.
+
+Tip: It can be a good idea to add new lines for every package you want to install in the Dockerfile, to make use of Docker's caching.
 

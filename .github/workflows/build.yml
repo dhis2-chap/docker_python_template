@@ -9,7 +9,9 @@ on:
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
 env:
   REGISTRY: ghcr.io
-  # NB! Rember to change the name. Underscores are not allowed in the image name.
+  # NB! Rember to change the name. 
+  # The name should start with your github username or organization (e.g. dhis2-chap) 
+  # followed by a slash and then the image name (here r_test_image)
   IMAGE_NAME: "dhis2-chap/r_test_image"
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
