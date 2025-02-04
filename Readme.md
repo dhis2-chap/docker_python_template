@@ -16,7 +16,7 @@ This template is based on a base image that has the INLA packaged already instal
 
 If everything works, a Github action will start running after you push. If nothing fails, an Image will be pushed to the Github package registry. The name will be  `ghcr.io/dhis2-chap/docker_r_inla`. 
 
-In order to make it possible for anyone to use the image without authentication, you have to make the image public. On the left side in the front page of the repository you created, you will see the package. Click Package settings and edit visibility. 
+In order to make it possible for anyone to use the image without authentication, you have to make the image public. On the right side in the front page of the repository you created, you will see the package. Click Package settings and edit visibility. 
 
 To verify that the image exists and is available to the public, you can run `docker pull ghcr.io/ORGANIZATION/IMAGE_NAME:master`.
 
