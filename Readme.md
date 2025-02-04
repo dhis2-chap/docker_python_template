@@ -10,9 +10,9 @@ This template is based on a base image that has the INLA packaged already instal
 
 1. Fork this repository and checkout the code locally
 2. Decide on a name for the image you want to build. Edit the file `.githbub/workflows/build.yml` and make sure `IMAGE_NAME` points to your name.
-3. If you want, change how the Github action is being run. Currently, it runs on every push to the `master` branch (NB: Change this to `main` if you branch is called `main`).
-3. Edit Dockerfile. The file contains an example of how to add an R package
-4. Push the repository to Github. You should create a repository on Github first, add the correct remote and then push.
+3. If you want, change how the Github action is being run. Currently, it runs on every push to the `master` branch (NB: Change this to `main` if your branch is called `main`).
+3. Edit Dockerfile. The file contains an example of how to add a R package
+4. Push the repository to Github. You should create a repository on Github, add the correct remote and then push.
 
 If everything works, a Github action will start running after you push. If nothing fails, an Image will be pushed to the Github package registry. The name will be  `ghcr.io/dhis2-chap/docker_r_inla`. 
 
