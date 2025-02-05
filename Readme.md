@@ -8,7 +8,7 @@ This template is based on a base image that has the INLA packaged already instal
 
 ### How to use
 
-1. Fork this repository and checkout the code locally
+1. Make a fork of this repository, and give it a suitable name (e.g. docker_for_some_model). Clone the repository locally.
 2. Decide on a name for the image you want to build. Edit the file `.githbub/workflows/build.yml` and make sure `IMAGE_NAME` points to your name.
 3. If you want, change how the Github action is being run. Currently, it runs on every push to the `master` branch (NB: Change this to `main` if you branch is called `main`).
 3. Edit Dockerfile. The file contains an example of how to add an R package
