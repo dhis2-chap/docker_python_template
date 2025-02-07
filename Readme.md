@@ -9,7 +9,7 @@ This template is based on a base image that has the INLA packaged already instal
 ### How to use
 
 1. Make a fork of this repository, and give it a suitable name (e.g. docker_for_some_model). Clone the repository locally. Make sure to enable Github actions in the cloned repo (Go to Settings->Actions->General in the new repo).
-2. Decide on a name for the image you want to build. Edit the file `.githbub/workflows/build.yml` and make sure `IMAGE_NAME` points to your name.
+2. Decide on a name for the image you want to build. Edit the file `.githbub/workflows/build.yml` and make sure `IMAGE_NAME` points to your name. Note that upper case letters will be converted to lower case.
 3. If you want, change how the Github action is being run. Currently, it runs on every push to the `master` branch (NB: Change this to `main` if your branch is called `main`).
 3. Edit Dockerfile. The file contains an example of how to add an R package
 4. Push the repository to Github. You should create a repository on Github first, add the correct remote and then push.
@@ -23,4 +23,4 @@ To verify that the image exists and is available to the public, you can run `doc
 Tip: It can be a good idea to add new lines for every package you want to install in the Dockerfile, to make use of Docker's caching.
 
 Tip: The current Dockerfile is based on an image that has R with INLA. If you don't need INLA, feel free to base the image
-on just R instead, e.g. by using `FROM
+on just R instead, e.g. by using `FROM`.
