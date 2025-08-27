@@ -16,3 +16,4 @@ If everything works, a Github action will start running after you push. If nothi
 In order to make it possible for anyone to use the image without authentication, you have to make the image public. On the right side in the front page of the repository you created, you will see the package. Click Package settings and edit visibility. 
 
 To verify that the image exists and is available to the public, you can run `docker pull ghcr.io/ORGANIZATION/IMAGE_NAME:master`.
+
