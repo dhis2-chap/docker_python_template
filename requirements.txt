@@ -2,4 +2,4 @@ pandas
 statsmodels
 joblib
 scipy
-sklearn
+scikit-learn
